@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Animación para el título */
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInDown 1s forwards;
+  }
+  
+  /* Animación para el título */
+  @keyframes fadeInDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Grid para proyectos */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Tarjetas de proyectos */
+  .project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Efecto hover en tarjetas */
+  .project-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Descripción de proyectos (inicialmente oculta) */
+  .project-card p {
+    font-size: 1rem;
+    color: #555;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    opacity: 0;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Mostrar la descripción al pasar el cursor */
+  .project-card:hover p {
+    height: auto;
+    opacity: 1;
+  }
+  
+  /* Enlace al pasar el cursor */
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

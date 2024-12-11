@@ -1,0 +1,51 @@
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clock {
+  position: relative;
+  width: 100px; /* Tamaño del reloj */
+  height: 100px;
+  border: 6px solid #333; /* Grosor del borde */
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clock div {
+  position: absolute;
+  background-color: #333;
+  transform-origin: 50% 100%; /* Punto de rotación en la base de la aguja */
+  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Agujas del reloj ajustadas a 100px */
+.hour {
+  width: 4px; /* Grosor de la aguja */
+  height: 25px; /* Largo de la aguja de hora */
+  top: 25px; /* Ajuste vertical */
+  left: 48px; /* Centrado horizontal */
+  background-color: #000;
+  border-radius: 2px; /* Bordes redondeados */
+}
+
+.minute {
+  width: 3px; /* Grosor de la aguja */
+  height: 35px; /* Largo de la aguja de minutos */
+  top: 15px; /* Ajuste vertical */
+  left: 48.5px; /* Centrado horizontal */
+  background-color: #666;
+  border-radius: 1.5px; /* Bordes redondeados */
+}
+
+.second {
+  width: 2px; /* Grosor de la aguja */
+  height: 40px; /* Largo de la aguja de segundos */
+  top: 10px; /* Ajuste vertical */
+  left: 49px; /* Centrado horizontal */
+  background-color: red;
+  border-radius: 1px; /* Bordes redondeados */
+}

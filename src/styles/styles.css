@@ -1,0 +1,90 @@
+/* Reset global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General styles for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DAD3BE;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .inicio{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Styling for the container of the navigation */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Styling for the navigation bar */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:#254336 ;
+    padding: 10px 0;
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 20px #6B8A7A);
+  }
+  
+  nav a {
+    color: #F7F7F8;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #6B8A7A;
+    color: #B7B597;
+  }
+  
+  /* Styling for the content section */
+  .content {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 500px;
+  }
+  
+  /* Styling for the main title */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    filter: drop-shadow(2px 2px 20px #6B8A7A);
+    
+  }
+  
+  /* Styling for the subtitle */
+  .subtitle {
+    background-color: #B7B597;
+    font-size: 1.2rem;
+    color: #F7F7F8;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  .img{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    
+  }
+  
+  .img img{
+    border-radius: 10% 50% 10%50% / 50% 10% 50% 10%;
+    height: 400px;
+    width: 400px;
+    filter: drop-shadow(2px 2px 20px #6B8A7A);
+  }
